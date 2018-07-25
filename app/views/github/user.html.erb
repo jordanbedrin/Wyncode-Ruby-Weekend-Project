@@ -1,0 +1,8 @@
+<h1> Good morning user :) </h2>
+
+
+  <%= form_tag("/github/index", method: "get") do %>
+  <label for="username">Username</label>
+    <%= text_field_tag(:username) %>
+    <%= submit_tag("Go!") %>
+  <% end %>
